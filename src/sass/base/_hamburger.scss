@@ -1,0 +1,53 @@
+%hamburger-line {
+    display: inline-block;
+    position: absolute;
+    content: "";
+
+    background-color: $color-light;
+
+    border-radius: 5px;
+
+    height: 2.67px;
+    width: 100%;
+}
+
+.hamburger {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    display: none;
+
+
+
+    width: 35px;
+    height: 32px;
+
+    @include media-tablet {
+        display: flex;
+    }
+
+}
+.hamburger__container {
+    width: 26.25px;
+    height: 16px;
+    position: relative;
+    // border: 1px solid black;
+    &::before {
+        @extend %hamburger-line;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        @extend %hamburger-line;
+        bottom: 0;
+        left: 0;
+    }
+}
+.hamburger__line {
+    @extend %hamburger-line;
+    top: calc(50% - calc(2.67px/2));
+}
