@@ -1,0 +1,116 @@
+.preview__input {
+
+    padding: 18px;
+    max-width: 892px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    
+    @include media-tablet {
+        padding: 0;
+    }
+    
+    @include media-mobile {
+        padding: 0;
+    }
+}
+.input__label {
+
+    ::placeholder {
+
+
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+
+        color: $color-brand;
+
+        @include media-tablet{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+    
+        }
+        @include media-mobile {
+
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+        }
+    }
+    @include media-tablet {
+        max-width: calc(100% - 160px);
+    }
+
+}
+
+#input__title {
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    max-width: 560px;
+
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    color: $color-brand;
+
+
+    @include media-tablet {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+
+        max-width: 400px;
+
+        margin-left: 16px;
+        padding: 20px 0;
+    }
+    @include media-mobile {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+
+        margin-left: 16px;
+        max-width: 220px;
+        padding: 15px 0;
+    }
+    @include media-mobilesmall {
+        margin-left: 16px;
+        max-width: 150px;
+    }
+
+}
+
+.input__button {
+    right: 0;
+    max-width: 228px;
+    max-height: 59px;
+
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    @include media-tablet {
+        max-width: 140px;
+        max-height: 40px;
+        
+        margin-right: 9px;
+
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+
+    }
+
+    @include media-mobile {
+        max-width: 92px;
+        max-height: 30px;
+        
+        margin-right: 9px;
+
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
