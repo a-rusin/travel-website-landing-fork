@@ -1,0 +1,75 @@
+footer {
+    position: relative;
+    bottom: 54px;
+    
+    @include media-tablet {
+        bottom: 47px;
+    }
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy__rights {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    text-align: center;
+
+    margin-left: 80px;
+
+    color: $color-light;
+
+    @include media-tablet {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-left: 10px;
+    }
+    @include media-mobile {
+        display: none;
+    }
+}
+.footer__ul {
+    display: flex;
+    align-items: center;
+}
+.social-networks:not(:last-child) {
+    margin-right: 21px;
+    @include media-tablet {
+        margin-right: 15px;
+    }
+}
+.social-networks {
+    list-style-type: none;
+}
+
+.rolling-scopes {
+    height: 40px;
+
+    @include media-tablet {
+        height: 25px;
+    }
+
+}
+.networks-icon {
+    width: 32px !important;
+    height: 32px !important;
+
+    @include media-tablet {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        width: 25px !important;
+        height: 25px !important;
+    }
+    @include media-mobile {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+}

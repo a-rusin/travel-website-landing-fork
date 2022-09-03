@@ -7,10 +7,23 @@
 
 // abstracts
 @import "abstracts/constants";
-// @import "abstracts/mixins";
+@import "abstracts/mixins";
 
 // base
 @import "base/base";
 @import "base/buttons";
 @import "base/iconFont";
 @import "base/hamburger";
+
+// layouts
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/preview";
+@import "layouts/stories";
+@import "layouts/destination";
+@import "layouts/footer";
+// @import "layouts/pop-up";
+
+// components
+// @import "components/components";
+// @import "components/preview_imput";
