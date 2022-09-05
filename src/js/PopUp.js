@@ -8,14 +8,14 @@ const loginButton = document.querySelector('#login_btn');
 const openModalWindow = () => {
     loginOverlay.classList.add('open');
 }
-const closeModalWindow = (event) => {
+// const closeModalWindow = (event) => {
 
-        console.log(event);
-        console.log(event.target);
-        console.log(event.currentTarget);
-        event.stopPropagation();
-    loginOverlay.classList.remove('open');
-}
+//         console.log(event);
+//         console.log(event.target);
+//         console.log(event.currentTarget);
+//         event.stopPropagation();
+//     // loginOverlay.classList.remove('open');
+// }
 
 
 loginButton.addEventListener('click', openModalWindow );
