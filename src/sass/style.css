@@ -10,7 +10,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
-  background-color: rgb(161, 161, 161);
+  background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -786,7 +786,7 @@ footer {
 }
 .facebook::before {
   content: "";
-  background-image: url(../../img/icons/Icon_facebook.svg);
+  background-image: url(../../../img/icons/Icon_facebook.svg);
   background-repeat: no-repeat;
   background-size: 23px 22.86px !important;
   width: 23px !important;
@@ -799,7 +799,7 @@ footer {
 }
 .google::before {
   content: "";
-  background-image: url(../../img/icons/Icon_facebook.svg);
+  background-image: url(../../../img/icons/Icon_facebook.svg);
   background-repeat: no-repeat;
   background-size: 23px 22.86px !important;
   width: 23px !important;
