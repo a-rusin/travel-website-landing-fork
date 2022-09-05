@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel landing</title>
+    <!-- <link rel="stylesheet" href="sass/iconFont.css"> -->
+    <link rel="stylesheet" href="/src/sass/style.css">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#" class="logo logo_icon">
+                    <object data="img/logo/Logo.svg" type="image/svg+xml"></object>
+                </a>
+                <a href="#" class="logo logo_text">
+                    <object data="img/logo/Logo_Text.svg" type="image/svg+xml"></object>
+                </a>
+            </div>
+
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__li"><a href="#preview">How It Works</a></li>
+                    <li class="navigation__li"><a href="#steps">Plan Your Trip</a></li>
+                    <li class="navigation__li"><a href="#destination">Destinations</a></li>
+                    <li class="navigation__li"><a href="#stories_block">Travel Stories</a></li>
+                </ul>
+            </nav>
+
+            <button class="button header__button" id="login_btn">Login</button>
+            <span class="hamburger">
+                <div class="hamburger__container">
+                    <span class="hamburger__line"></span>
+                </div>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page__preview" id="preview">
+            <div class="container preview__container">
+                <div class="preview__content">
+                    <h1>Explore the beauty of the World</h1>
+                    <p class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</p>
+                    <form action="" class="preview__input">
+                        <label for="input__title" class="input__label">
+                            <input type="text" id="input__title" placeholder="What would you like to do?">
+                        </label>                 
+                        <button class="button input__button">Start Planning</button>
+                    </form>
+                </div>
+            </div>
+        
+            <section class="page__steps" id="steps">
+                <div class="container">
+                    <h2 class="section__title">3 STEPS TO THE PERFECT TRIP</h2>
+                    <div class="layout__3__column">
+                        <div class="column__wrapper icon__01">
+                            <div class="steps__icon">
+                                <div class="icon">
+                                    <object class="icon__object" data="img/icons/icon_velo.svg" type="image/svg+xml">Your browser don't support SVG</object>
+                                </div>
+                            </div>
+                            <p class="steps__text icon__01">Tell us what you want to do</p>
+                        </div>
+                        <div class="column__wrapper icon__02">
+                            <div class="steps__icon">
+                                <div class="icon">
+                                    <object class="icon__object" data="img/icons/icon_calendar.svg" type="image/svg+xml">Your browser don't support SVG</object>
+                                </div>
+                            </div>
+                            <p class="steps__text">Share us preferable dates </p>
+                        </div>
+                        <div class="column__wrapper icon__03">
+                            <div class="steps__icon">
+                                <div class="icon">
+                                    <object class="icon__object" data="img/icons/icon_plane.svg" type="image/svg+xml">Your browser don't support SVG</object>
+                                </div>
+                            </div>
+                            <p class="steps__text icon__03">We will give you recommendations</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        
+            <section class="page__destination" id="destination">
+                <div class="container">
+                    <h2 class="section__title">POPULAR DESTINATIONS</h2>
+                </div>
+                
+                <div class="insert__destination">
+                    <div class="slider_container">
+                        <div class="btn_slider">
+                            <button class="leftBtn button__slider icon-icon_arrow"></button>
+                            <button class="rightBtn button__slider icon-icon_arrow"></button>
+                        </div>
+                        <div class="slider">
+                            <div class="slider__img usa first_img">
+                                <img src="img/backgrounds/Article_03_desktop.jpg" alt="">
+                            </div>
+                            <div class="slider__img spain">
+                                <img src="img/backgrounds/Article_01_desktop.jpg" alt="">
+                            </div>
+                            <div class="slider__img japan">
+                                <img src="img/backgrounds/Article_02_desktop.jpg" alt="">
+                            </div>
+                            <div class="slider__img usa">
+                                <img src="img/backgrounds/Article_03_desktop.jpg" alt="">
+                            </div>
+                            <div class="slider__img spain last_img">
+                                <img src="img/backgrounds/Article_01_desktop.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="dot__container">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    
+                </div>
+                
+                <div class="container">
+                    <button class="button button_arrow">Find More</button>
+                </div>
+    
+            </section>
+        
+            <section class="stories" id="stories_block">
+                <div class="container">
+                    <h2 class="section__title">TRAVEL STORIES</h2>
+                </div>
+                <div class="stories__wrapper">
+                    <div class="stories__row">
+                        <div class="container">
+                            <div class="stories-container">
+                                <div class="stories__block">
+                                    <picture class="stories__img-wrapper">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_01_desctop.jpg" media="(min-width: 600px)">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_01_mobile.jpg" media="(min-width: 150px)">
+                                        <img class="stories__img" src="img/backgrounds/Stories_01_desctop.jpg" alt="MDN">
+                                    </picture>
+                                    <div class="stories__content">
+                                        <h3 class="stiries__title">10 Photos of Attractive Thailand</h3>
+                                        <p class="stories__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p><span><a href="#" class="read__more stories_article_01">Read More</a></span>
+                                    </div>
+                                </div>
+                                <div class="stories__block">
+                                    <picture class="stories__img-wrapper">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_02_desctop.jpg" media="(min-width: 600px)">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_02_mobile.jpg" media="(min-width: 150px)">
+                                        <img class="stories__img" src="img/backgrounds/Stories_02_desctop.jpg" alt="MDN">
+                                    </picture>
+                                    <div class="stories__content">
+                                        <h3 class="stiries__title">Canyonlands National Park, Utah</h3>
+                                        <p class="stories__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p><span><a href="#" class="read__more stories_article_02">Read More</a></span>
+                                    </div>
+                                </div>
+                                <div class="stories__block">
+                                    <picture class="stories__img-wrapper">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_03_desktop.jpg" media="(min-width: 600px)">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_03_mobile.jpg" media="(min-width: 150px)">
+                                        <img class="stories__img" src="img/backgrounds/Stories_03_desktop.jpg" alt="MDN">
+                                    </picture>
+                                    <div class="stories__content">
+                                        <h3 class="stiries__title">I left my heart in the Mountains!</h3>
+                                        <p class="stories__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p><span><a href="#" class="read__more stories_article_03">Read More</a></span>
+                                    </div>
+                                </div>
+                                <div class="stories__block">
+                                    <picture class="stories__img-wrapper">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_04_desktop.jpg" media="(min-width: 600px)">
+                                        <source class="stories__img" srcset="img/backgrounds/Stories_04_mobile.jpg" media="(min-width: 150px)">
+                                        <img class="stories__img" src="img/backgrounds/Stories_04_desktop.jpg" alt="MDN">
+                                    </picture>
+                                    <div class="stories__content">
+                                        <h3 class="stiries__title">The Longest journey in my life!</h3>
+                                        <p class="stories__article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p><span><a href="#" class="read__more stories_article_04">Read More</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="button button_arrow">See More</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="container footer__content">
+            <a href="https://rs.school/js-stage0/" target="_blank">
+                <object data="img/icons/rs_school_js_White.svg" type="image/svg+xml" class="rolling-scopes">Your browser don't support SVG</object>
+            </a>
+            <div class="rights">
+                <p class="copy__rights">All Rights Reserved 	&#169; Travel Portal</p>
+            </div>
+            <ul class="footer__ul">
+                <li class="social-networks"><a href="https://www.instagram.com/evn_v" target="_blank">
+                    <object data="img/icons/icon_instagram.svg" type="image/svg+xml" class="instagram networks-icon">Your browser don't support SVG</object>
+                </a></li>
+                <li class="social-networks"><a href="https://www.youtube.com/c/RollingScopesSchool" target="_blank">
+                    <object data="img/icons/icon_youtube.svg" type="image/svg+xml" class="youtube networks-icon">Your browser don't support SVG</object>
+                </a></li>
+                <li class="social-networks"><a href="https://www.twitter.com/evn_v" target="_blank">
+                    <object data="img/icons/icon_twetter.svg" type="image/svg+xml" class="twitter networks-icon">Your browser don't support SVG</object>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="login_overlay" id="login_overlay">
+        <div class="login__substrate">
+            <div class="container__social">
+                <h4>Log in to your account</h4>
+                <div class="buttons__login">
+                    <button class="button__social facebook">Sign In with Facebook</button>
+                    <button class="button__social google">Sign In with Google</button>
+                </div>
+
+                <div class="br_divider">or</div>
+                <div class="imput__info">
+                    <p class="input__p">E-mail</p>
+                    <!-- <label for="email__addres" class="input__social"> -->
+                        <input type="email" name="" id="email__addres" class="input__social">
+                    <!-- </label>  -->
+                </div>
+                <div class="imput__info">
+                    <p class="input__p">Password</p>
+                    <input type="password" name="" id="password__id" class="input__social">
+                </div>
+                <button type="submit" class="button__social sign_in">Sign In</button>
+                <a href="#" class="social__link">Forgot Your Password?</a>
+                <div class="br__divider"></div>
+                <div class="p__registration">Don’t have an account?<a href="#" class="social__link">Register</a></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="src/js/PopUp.js"></script>
+    <script src="src/js/Slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.header {
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-height: 90px;
+    background-color: $color-brand-transparent;
+
+    @include media-tablet{
+        padding: 28px 0 0;
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 90%);
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: flex-end;
+}
+.logo_text {
+    margin-left: 6px;
+
+    @include media-mobile {
+        display: none;
+    }
+}
+.header__navigation {
+    flex: 1 1 auto;
+    padding: 0 15px;
+    max-width: 500px;
+
+    @include media-tablet {
+        display: none;
+    }
+    @include media-mobile {
+        display: none;
+    }
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    // flex: 1;
+}
+.navigation__li {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: $color-light;
+    list-style-type: none;
+    cursor: pointer;
+
+    & > a {
+        text-decoration: none;  
+        color: $color-light;
+    }
+
+
+
+    // &:hover {
+    //     background-color: $color-additional;
+    //     padding: 5px 15px;
+    //     border-radius: 5px;
+    // }
+    // &:not(:last-child) {
+    //     margin-right: calc(42px);
+    // }
+}
+.header__button {
+    margin: 25px 0 24px;
+    & > a {
+        text-decoration: none;
+        color: $color-light;
+    }
+
+    @include media-tablet {
+        display: none;
+    }
+    @include media-mobile {
+        display: none;
+    }
+
+}

@@ -1,0 +1,44 @@
+.page__preview {
+    background: url(../../img/backgrounds/preview.jpg) no-repeat;
+    max-height: 765px;
+    background-repeat: no-repeat;
+
+    @include media-mobile {
+        background: url(../../img/backgrounds/Main_mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        object-fit: cover;
+    }
+}
+
+.preview__content {
+    max-width: 892px;
+    padding: 122px 0 252px 0;
+
+    @include media-tablet {
+        padding: 150px 0 60px 0;
+    }
+    @include media-mobile {
+        padding: 142px 0 60px 0;
+    }
+}
+// .preview__content:last-child {
+//     margin-bottom: 0;
+// }
+.preview__text {
+    margin: 40px 0;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    
+    color: $color-light;
+
+    @include media-tablet {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    @include media-mobile {
+        display: none;
+    }
+}
